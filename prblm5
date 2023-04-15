@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Table
+{
+public static void main(String[] args)
+{
+ 	int num,i,table;
+	Scanner S = new Scanner(System.in);
+	System.out.println("Enter a number");
+	num = S.nextInt();
+	i=1;
+	while(i<=10)
+		{
+			table = i*num;
+			System.out.println(table);
+			i=i+1;
+		}
+	}
+}
