@@ -1,0 +1,45 @@
+import javax.swing.*;
+import java.awt.event.*;
+class sts1 extends JFrame implements ActionListener
+{
+JFrame f= new JFrame();
+JPanel p1;
+JLabel l1,l2,l3;
+JTextField t1,t2;
+JPasswordField t3;
+JButton b1,b2;
+public sts1()
+{
+p1= new JPanel();
+l1= new JLabel("studentName");
+l2=new JLabel("ROllno");
+l3=new JLabel("DOB");
+t1=new JTextField(30);
+t2=new JTextField(30);
+t3=new JPasswordField(30);
+b1= new JButton("Submit");
+b2=new JButton("Exit");
+b1.addActionListener(this);
+p1.add(l1);
+p1.add(t1);
+p1.add(l2);
+p1.add(t3);
+p1.add(l3);
+p1.add(t2);
+p1.add(b1);
+p1.add(b2);
+add(p1);
+} 
+public static void main(String[] args)
+{
+sts1 s= new sts1();
+
+s.setSize(400,400);
+s.setVisible(true); 
+s.setTitle("Student Registration");
+}
+public void actionPerformed(ActionEvent evt)
+{
+t2.setText("welcome");
+}
+}
