@@ -1,0 +1,19 @@
+class Student1
+{
+int rollno;
+String Sname;
+String Saddress;
+void accept()
+{
+rollno= 123;
+Sname = "Gautam";
+Saddress = "Vns";
+}
+ void display()
+{
+System.out.println(rollno);
+System.out.println(Sname);
+System.out.println(Saddress);
+}
+}
+
