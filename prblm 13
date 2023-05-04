@@ -1,0 +1,36 @@
+class ConstructorDemo
+{
+int rollno;
+String Name;
+	public ConstructorDemo()
+{
+	rollno=123;
+	Name="Rakesh";
+}
+public ConstructorDemo(int roll,String SName)
+	{
+	rollno = roll;
+	Name = SName;
+	}
+void display()
+{
+	System.out.println(rollno);
+	System.out.println(Name);
+}
+public static void main(String[] args)
+{
+	ConstructorDemo d = new ConstructorDemo();
+	ConstructorDemo d1 = new ConstructorDemo(1,"RAJA");
+	ConstructorDemo d2 = new ConstructorDemo(2,"Gautam");
+d.display();
+d1.display();
+d2.display();
+}
+}
+
+
+
+
+
+
+	
