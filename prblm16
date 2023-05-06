@@ -1,0 +1,33 @@
+// wap to check a number is prime or not.//
+import java.util.Scanner;
+class Prime
+{
+public static void main(String[] args)
+{
+int i; 
+int num;
+int fact =0;
+Scanner S = new Scanner(System.in);
+System.out.println("Enter a number");
+num = S.nextInt();
+for(i=1;i<=num;i++)
+// for(i=1;i<=num/2;i++)//
+//it half the total number// 
+{
+	if(num%i==0)
+{
+	fact = fact + 1;
+}
+}
+if (fact>2)
+// if (fact==1)//
+{
+System.out.println("Not prime");
+}
+else
+{
+System.out.println("prime number");
+}
+}
+}
+
